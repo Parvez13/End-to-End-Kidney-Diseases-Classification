@@ -8,6 +8,7 @@ __pycache__/
 
 artifacts/*
 logs/*
+mlruns/*
 
 # Distribution / packaging
 .Python
