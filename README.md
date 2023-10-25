@@ -33,4 +33,6 @@ Each entry in the dataset contains:
 * Update the dvc.yaml
 * app.py
 
+## Deployment
 * App deployed on AWS: <https://54.241.138.215/8080>
+
