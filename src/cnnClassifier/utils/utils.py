@@ -1,4 +1,5 @@
 import os
+import shutil
 from box.exceptions import BoxValueError
 import yaml
 from cnnClassifier import logger
@@ -132,3 +133,21 @@ def decodeImage(imgstring, fileName):
 def encodeImageIntoBase64(croppedImagePath):
     with open(croppedImagePath, "rb") as f:
         return base64.b64encode(f.read())
+
+def move_model_to_model_folder():
+    # Path to the source model file in 'artifacts/training_model' folder
+    source_path = os.path.join('artifacts', 'training', 'model.h5')
+    
+    # Destination directory
+    destination_dir = 'model'
+    
+    # Create 'model' folder if it doesn't exist
+    if not os.path.exists(destination_dir):
+        os.makedirs(destination_dir)
+    
+    # Destination path for the model.h5 file
+    destination_path = os.path.join(destination_dir, 'model.h5')
+    
+    # Copy the model.h5 file from source to destination
+    shutil.copy2(source_path, destination_path)
+    print(f"'model.h5' has been moved to '{destination_dir}' folder.")
