@@ -36,3 +36,7 @@ Each entry in the dataset contains:
 ## Deployment
 * App deployed on AWS: <https://54.241.138.215/8080>
 
+https://github.com/Parvez13/End-to-End-Kidney-Diseases-Classification/assets/66157611/7f1fa6dd-dc07-4667-adb1-22215898f967
+
+
+
